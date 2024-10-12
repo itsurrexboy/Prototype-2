@@ -625,7 +625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  moveSpeed: 10
+  moveSpeed: 20
+  xRange: 11
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
