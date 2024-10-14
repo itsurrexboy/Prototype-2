@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput = 0;
     public float moveSpeed = 10f;
     public float xRange;
+    public GameObject projectile;
     void Start()
     {
         
@@ -22,7 +23,11 @@ public class PlayerController : MonoBehaviour
         }
        
         horizontalInput = Input.GetAxis("Horizontal");
-        
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * moveSpeed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectile, transform.position, projectile.transform.rotation);
+        }
     }
 }
