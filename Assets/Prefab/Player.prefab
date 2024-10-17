@@ -676,7 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   moveSpeed: 20
-  xRange: 11
+  xRange: 20
   projectile: {fileID: 4335400106355215748, guid: d36735783d06dc743a5e317396dfe9a1, type: 3}
 --- !u!1 &3628705669279435420
 GameObject:
