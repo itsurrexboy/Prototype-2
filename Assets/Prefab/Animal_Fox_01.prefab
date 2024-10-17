@@ -267,6 +267,9 @@ GameObject:
   - component: {fileID: 2434126909478822414}
   - component: {fileID: 7212019442083946866}
   - component: {fileID: 1189703543956362575}
+  - component: {fileID: 1793339507409485143}
+  - component: {fileID: 6856250587593116441}
+  - component: {fileID: 6712937743327445496}
   m_Layer: 0
   m_Name: Animal_Fox_01
   m_TagString: Untagged
@@ -334,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf532265aa8b1d458248dfc068178ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 10
 --- !u!114 &1189703543956362575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +351,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outBound: 40
-  lowBound: -10
+  lowBound: -4.9
+--- !u!114 &1793339507409485143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077060813979470933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e56f6deab42c345828f99232c46250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &6856250587593116441
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077060813979470933}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6712937743327445496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077060813979470933}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.14311598, y: 0.22657649, z: 0.3773124}
+  m_Center: {x: 0.004132879, y: 0.10194446, z: 0.0027553083}
 --- !u!1 &2139062525542263517
 GameObject:
   m_ObjectHideFlags: 0
